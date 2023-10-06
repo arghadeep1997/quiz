@@ -6,7 +6,6 @@
 }
 
 /* Header Styles */
-
 header {
     background-color: #3c00a0;
     color: #fff;
@@ -17,8 +16,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    transition: left 0.3s ease; /* Add a smooth transition effect */
+    transition: left 0.3s ease;
 }
+
 
 /* Navbar Styles */
 .navbar {
@@ -28,7 +28,6 @@ header {
     z-index: 1001;
 }
 
-
 .navbar a {
     color: #fff;
     text-decoration: none;
@@ -36,21 +35,10 @@ header {
     margin: 0 10px;
     font-size: 16px;
 }
+
 .navbar a:hover {
     background-color: #007bff;
     border-radius: 5px;
-}
-
-/* Adjustments for responsiveness */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-    }
 }
 
 /* Right side box */
@@ -61,6 +49,7 @@ header {
     transform: translateY(-50%);
     z-index: 1002;
 }
+
 .box {
     width: 150px;
     height: 80px;
@@ -86,17 +75,14 @@ header {
 }
 
 /* Logo Styles */
-
 .logo-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* Adjust as needed */
-    
+    margin-bottom: 20px;
 }
 
-
 .logo-container img {
-    width: 100px; /* Adjust the width as needed */
+    width: 100px;
     height: auto;
 }
 
@@ -112,8 +98,8 @@ header {
     flex-direction: column;
     align-items: center;
     z-index: 0;
+    margin-top: 80px; /* Adjust margin-top to create space for the fixed header */
 }
-
 .form-box {
     width: 90%;
     max-width: 450px;
@@ -126,12 +112,6 @@ header {
     text-align: center;
     z-index: 1;
 }
-
-
-
-
-
-
 
 .form-box h1 {
     font-size: 30px;
@@ -268,6 +248,13 @@ footer p {
 }
 
 /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}
+
+/* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .form-box {
         max-width: 400px;
@@ -283,29 +270,28 @@ footer p {
 @media screen and (max-width: 480px) {
     .form-box {
         max-width: 300px;
-        padding: 30px; /* Adjust padding for better spacing */
+        padding: 30px;
     }
 
     .btn-field button {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 768px) {
     header {
-        left: -100%; /* Hide the header off-screen by default */
+        left: -100%;
     }
 
     header.show {
-        left: 0; /* Show the header when the show class is applied */
+        left: 0;
     }
-
-    /* Rest of your styles... */
 }
 
 /* Add this style for mobile header */
 @media screen and (max-width: 768px) {
     header {
-        left: -100%; /* Hide the header off-screen by default */
+        left: -100%;
         position: fixed;
         top: 0;
         height: 100vh;
@@ -315,13 +301,13 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
-        width: 80%; /* Adjust the width as needed */
-        transition: left 0.3s ease; /* Add a smooth transition effect */
+        width: 80%;
+        transition: left 0.3s ease;
         z-index: 2;
     }
 
     header.show {
-        left: 0; /* Show the header when the show class is applied */
+        left: 0;
     }
 
     .menu-icon {
@@ -329,19 +315,19 @@ footer p {
         position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 3; /* Ensure the menu icon is above the mobile header */
+        z-index: 3;
     }
 
     .navbar {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align menu items to the left */
-        width: 100%; /* Full width for mobile */
-        z-index: 4; /* Adjust the z-index to be higher than the logo-container */
+        align-items: flex-start;
+        width: 100%;
+        z-index: 4;
     }
 
     .navbar a {
-        margin: 10px 20px; /* Adjust margin for better spacing */
+        margin: 10px 20px;
         color: #fff;
         text-decoration: none;
         font-size: 16px;
@@ -353,5 +339,36 @@ footer p {
     }
 }
 
+/* Media query for footer responsiveness */
+@media screen and (max-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1003;
+        background-color: #3c00a0;
+        padding: 10px 20px;
+        text-align: center;
+    }
 
+    .social-icons {
+        margin-top: 5px;
+    }
+}
 
+/* Media query for desktop */
+@media screen and (min-width: 769px) {
+    footer {
+        position: static;
+    }
+}
+@media screen and (min-width: 769px) {
+    header {
+        left: 0; /* Show the header when on desktop */
+    }
+
+    .container {
+        margin-top: 0; /* Remove margin-top for desktop */
+    }
+}
