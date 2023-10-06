@@ -5,6 +5,47 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+/* <----------------------------------------------------------------------------------------> */
+
+/* Header Styles */
+header {
+    background-color: #3c00a0;
+ 
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+}
 
 /* <-----------------------------------------------------------------------------> */
 /* Right side box */
@@ -193,26 +234,6 @@ input {
 
 
 
-/* .terms {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 16px;
-    color: #555;
-}
-
-.terms p {
-    margin: 0;
-}
-
-.terms a {
-    color: #3c00a0;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 5px;
-} */
-
-
-
 /* payment */
 .payment-image {
     max-width: 30%;
@@ -222,83 +243,7 @@ input {
 
 /* <--------------------------------------------------------------------------------------> */
 
-
-/* Menu bar styles */
-.menu-bar {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 80vh; /* Adjust to desired height */
-    background: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the items vertically */
-    padding-top: 20px; /* Add some top padding */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    width: 100%; /* Make menu items full width */
-    box-sizing: border-box;
-    transition: background 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%; /* Set a fixed height for each menu item */
-}
-
-.menu-item:hover {
-    background: #555;
-}
-
-
-
-
 /* <--------------------------------------------------------------------------------------> */
-footer {
-    background-color: #3c00a0;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    position:sticky;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-/* Styling for the social media icons */
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-/* Styling for Font Awesome icons */
-.social-icons i {
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover i {
-    color: #007bff; /* Change the color on hover */
-}
-
-/* <--------------------------------------------------------------------------------------> */
-
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
