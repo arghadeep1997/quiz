@@ -91,7 +91,9 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px; /* Adjust as needed */
+    
 }
+
 
 .logo-container img {
     width: 100px; /* Adjust the width as needed */
@@ -300,11 +302,22 @@ footer p {
     /* Rest of your styles... */
 }
 
-
 /* Add this style for mobile header */
 @media screen and (max-width: 768px) {
     header {
         left: -100%; /* Hide the header off-screen by default */
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #3c00a0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 80%; /* Adjust the width as needed */
+        transition: left 0.3s ease; /* Add a smooth transition effect */
+        z-index: 2;
     }
 
     header.show {
@@ -316,16 +329,29 @@ footer p {
         position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 1001;
+        z-index: 3; /* Ensure the menu icon is above the mobile header */
     }
 
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: flex-start; /* Align menu items to the left */
         width: 100%; /* Full width for mobile */
+        z-index: 4; /* Adjust the z-index to be higher than the logo-container */
     }
 
     .navbar a {
         margin: 10px 20px; /* Adjust margin for better spacing */
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .navbar a:hover {
+        background-color: #007bff;
+        border-radius: 5px;
     }
 }
+
+
+
