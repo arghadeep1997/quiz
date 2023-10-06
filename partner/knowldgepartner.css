@@ -1,0 +1,64 @@
+/* Style for Calqulus container */
+.Calqulus {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left alignment for the container */
+.Calqulus {
+    float: left;
+    width: 70%; /* Adjust width as needed */
+    margin-right: 5%; /* Adjust margin as needed */
+}
+
+/* Heading styles */
+h1, h2, h3 {
+    color: #3c00a0;
+    text-align: center;
+}
+
+/* Paragraph styles */
+.about-us {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.event-details {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* List styles */
+ol, ul {
+    margin-bottom: 15px;
+    list-style-position: inside;
+}
+
+/* List item styles */
+li {
+    margin-bottom: 8px;
+}
+
+/* Strong text styles */
+strong {
+    color: #3c00a0;
+}
+
+/* Anchor link styles */
+a {
+    color: #3c00a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0f3d92; /* Darker shade of blue */
+    text-decoration: underline;
+}

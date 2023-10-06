@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://kit.fontawesome.com/6f5710cdad.js" crossorigin="anonymous"></script>
+
+    <script src="/script.js"></script>
+
+
+
+</head>
+<body>
+    <!-- <-------------------------------------------------------------------->
+    <!-- menu -->
+    <div class="container">
+        <div class="menu-bar">
+            <a href="/about/about.html"  target="_blank" class="menu-item">About</a>
+            <a href="/partner/knowldgepartner.html"  target="_blank" class="menu-item" onclick="toggleKnowledgePartner()">Knowledge Partner</a>
+            <a href="#" class="menu-item"  target="_blank" onclick="toggleContact()">Contact</a>
+        </div>
+        
+
+    <!-- <-------------------------------------------------------------------- -->
+    <!-- Right side Box  for Advertisement -->
+        <div class="box-container">
+            <div class="box" id="box1">
+   
+                <a href="https://5pointeducation.in/tests/972/kbc-quiz" target="_blank">KBC (QUIZ)🤑</a>
+            </div>
+
+            <div class="box" id="box2">
+        
+                <a href="https://5pointeducation.in/tests/261/static-gk" target="_blank">General Awareness 1️⃣</a>
+            </div>
+
+            <div class="box" id="box3">
+                
+                <a href="https://5pointeducation.in/tests/262/general-studies" target="_blank">General Awareness 2️⃣</a>
+            </div>
+
+            <div class="toggle-button" onclick="toggleBoxes()">Practice Quiz Here</div>
+        </div>
+        
+        <!-- <--------------------------------------------------------------------- -->
+        <!-- main form -->
+
+        <div class="form-box">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="https://5pointeducation.in" target="_blank">
+                    <img src="/logo/5point.jpeg" alt="Logo 1">
+                </a>
+                <a href="https://www.example.com" target="_blank">
+                    <img src="/logo/calqulus.jpeg" alt="Logo 2">
+                </a>
+            </div>
+            
+            <!-- main field -->
+
+            <h1>Welcome!! Register Yourself</h1>
+            <form  name="submit-to-google-sheet" enctype="multipart/form-data" >
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="name" placeholder="⭐enter Your name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="phone" placeholder="⭐9874585644" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="someone@quiz.com">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="address" placeholder="enter Your Address">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-fire"></i>
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-field" required>
+                        <label>⭐Choose Quiz(s):</label>
+                        <input type="radio" name="Quiz" value="bangaliyana"> বাঙালিয়ানা
+                        <input type="radio" name="Quiz" value="general"> General
+                        <input type="radio" name="Quiz" value="both"> Both
+                    </div>
+                    <div class="input-field">
+                        <h5>upIID: shuvamsarkar2000-1@okaxis<br>upi no:9674187266<br>A/C No: 919051879329</h5>
+                        <label>Payment Amount: </label>
+                        <input type="text" name="payment" placeholder="payment amount" readonly >
+                        <img src="/image/payment.jpeg" class="payment-image">
+                    </div>
+                
+                
+                    <div class="input-field">
+                        <label>Upload Payment Copy:</label>
+                        <p>After payment done send the payment recpeipt to bellow number<br><b>9051879329</b></p>
+                    </div>                        
+                                        
+                    <div class="btn-field">
+                        <button type="button" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <span id="msg"></span>
+            
+
+        </div>
+
+    </div>
+
+
+
+
+
+<!-- <------------------------------------------------------------------------------ -->
+<!-- Footer -->
+
+
+
+<footer>
+    <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/your-youtube-channel" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+
+
+    
+
+</body>
+
+</html>
+

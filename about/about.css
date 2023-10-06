@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.Calqulus {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+    color: #3c00a0;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.event-details h2 {
+    color: #3c00a0;
+}
+
+.event-details h3 {
+    color: #3c00a0;
+    margin-top: 20px;
+}
+
+.event-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-details ul li {
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    line-height: 1.6;
+}
