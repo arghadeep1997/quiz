@@ -72,6 +72,15 @@ function toggleBoxes() {
     document.getElementById('box3').classList.toggle('active');
 }
 
+// Add this in your script.js file or within a script tag in your HTML
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.menu-icon');
+    const header = document.querySelector('header');
+
+    menuIcon.addEventListener('click', function () {
+        header.classList.toggle('show');
+    });
+});
 
 
 
